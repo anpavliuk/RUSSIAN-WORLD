@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Руский</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.blue {
+			background-color:blue;
+		}
+		
+		.yellow {
+			background-color: yellow;
+		}
+		
+		.white {
+			background-color: beige;
+		}
+		
+		.red {
+			background-color: red;
+		}
+
+		.green {
+			background-color: green;
+		}
+
+		.part {
+			width: 600px;
+			height: 200px;
+			border: 2px solid black;
+		}
+
+		#russia .part {
+			height: calc(400px/3);
+		}
+		#belasussia .part {
+			height: 300px;
+		}
+
+		#belasussia .part:nth-child(2) {
+			height: 100px;
+		}
+
+		#ruskiy-mir>div.flag {
+			margin: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="ruskiy-mir">
+			<div class="flag" id="ukraine">
+				<div class="part blue"></div>
+				<div class="part yellow"></div>
+			</div>
+			<div class="flag" id="russia">
+				<div class="part white"></div>
+				<div class="part blue"></div>
+				<div class="part red"></div>
+			</div>
+			<div class="flag" id="belasussia">
+				<!-- <img src="./BelasussiaVyshevanka.png" alt="Белурская Вышиванка"> -->
+				<div class="vyshevanka"></div>
+				<div class="flag">
+					<div class="part red"></div>
+					<div class="part green"></div> 
+				</div>
+			</div>
+	</div>
+</body>
+</html>
